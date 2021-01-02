@@ -55,6 +55,7 @@ if(res.status!==0){
 layer.msg('登陆成功')  
 // 将登录成功后的token存储
 localStorage.setItem('token',res.token)
+
 location.href='/index.html'
 }
 )
