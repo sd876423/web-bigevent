@@ -29,7 +29,7 @@ localStorage.removeItem('token')
 function getUserInfo(){
 $.ajax({
 method:'get',
-url:'http://ajax.frontend.itheima.net/my/userinfo',
+url:'http://api-breakingnews-web.itheima.net/my/userinfo',
 success:function(res){   
 //调用渲染用户头像的函数 
 console.log(res)

@@ -32,7 +32,7 @@ e.preventDefault()
 // 获取表单内容方式1
 var data={username:$('#form_reg [name=username]').val(),password:$('#form_reg [name=password]').val()}
 // 发起post请求
-$.post('http://ajax.frontend.itheima.net/api/reguser',data,function(res){
+$.post('http://api-breakingnews-web.itheima.net/api/reguser',data,function(res){
 if(res.status!==0){
 //使用layui 提示    
 return layer.msg(res.message)
@@ -47,7 +47,7 @@ $('#form_login').on('submit',function(e){
 e.preventDefault()
 var data={username:$('#form_login [name=username]').val(),password:$('#form_login [name=password]').val()}
 $.post(
-'http://ajax.frontend.itheima.net/api/login',
+'http://api-breakingnews-web.itheima.net/api/login',
 data,function(res){
 if(res.status!==0){
  return layer.msg('登陆失败')
